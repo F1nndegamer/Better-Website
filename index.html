@@ -5,40 +5,53 @@
     <title>Coding Help & Jobs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="theme-toggle">
+        <label class="switch">
+            <input type="checkbox" id="darkToggle">
+            <span class="slider"></span>
+        </label>
+        <span>🌞 / 🌙</span>
+    </div>
 
-    <div class="card">
+    <main class="card">
         <h1>🚀 Start Your Coding Journey</h1>
 
-        <div class="section">
+        <section class="section">
             <h2>Apply for a Coding Job</h2>
-            <p>Click below to fill out the application form and join our team.</p>
+            <p>Fill out the application and become part of our team.</p>
             <a href="https://docs.google.com/forms/d/1XB25tIfgli5wpgE4Eh8XUMtOXKzAwiQtTUl5Ckmcwus/edit" target="_blank" class="btn primary">Job Sign Up</a>
-        </div>
+        </section>
 
-        <div class="section">
+        <section class="section">
             <h2>Need a Coding Helper?</h2>
-            <p>Join our Discord for faster support and better pricing info.</p>
+            <p>Join our Discord for quick support and pricing details.</p>
             <a href="https://discord.gg/pSRUbtgU" target="_blank" class="btn discord">Join Discord</a>
-        </div>
+        </section>
 
-        <div class="section">
+        <section class="section">
             <h2>Buy Help Directly</h2>
-            <p>Prefer to use a form instead? Click below to buy directly.</p>
+            <p>Prefer using the website? Click below to buy now.</p>
             <a href="https://docs.google.com/forms/d/1XKgMRmgjqCYiTkwhaONxsp4ALmMF4LDI8F55J2JfhO0/edit" target="_blank" class="btn buy">Buy Now</a>
-        </div>
+        </section>
 
-        <div class="section">
+        <section class="section">
             <button onclick="showError()" class="btn secondary">📬 Contact</button>
             <p id="error" class="error"></p>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <script>
         function showError() {
             document.getElementById('error').textContent = "Sorry, coming soon!";
         }
+
+        const toggle = document.getElementById('darkToggle');
+        toggle.addEventListener('change', () => {
+            document.body.classList.toggle('dark');
+        });
     </script>
 </body>
 </html>
