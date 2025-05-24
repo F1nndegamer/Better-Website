@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Help & Jobs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Join Our Coding Opportunities</h1>
+        <p>If you're interested in a coding job, click the button below to sign up.</p>
+        <a href="https://docs.google.com/forms/d/1XB25tIfgli5wpgE4Eh8XUMtOXKzAwiQtTUl5Ckmcwus/edit" target="_blank" class="btn">Job Sign Up</a>
+
+        <h2>Need a Coding Helper?</h2>
+        <p>
+            Prices and options are available in our Discord. It's the best and fastest way to get help and learn the basics of coding.
+        </p>
+        <a href="https://discord.gg/pSRUbtgU" target="_blank" class="btn">Join Discord</a>
+
+        <h2>Want to Buy Directly?</h2>
+        <p>
+            You can also buy directly through our website using the button below.
+        </p>
+        <a href="https://docs.google.com/forms/d/1XKgMRmgjqCYiTkwhaONxsp4ALmMF4LDI8F55J2JfhO0/edit" target="_blank" class="btn">Buy Now</a>
+
+        <p id="error" class="error"></p>
+        <button onclick="showError()" class="btn secondary">Contact</button>
+    </div>
+
+    <script>
+        function showError() {
+            document.getElementById('error').textContent = "Sorry, coming soon!";
+        }
+    </script>
+</body>
+</html>
